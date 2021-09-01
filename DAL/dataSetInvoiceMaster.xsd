@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dataSetInvoiceMaster" targetNamespace="http://tempuri.org/dataSetInvoiceMaster.xsd" xmlns:mstns="http://tempuri.org/dataSetInvoiceMaster.xsd" xmlns="http://tempuri.org/dataSetInvoiceMaster.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="InvoiceConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="InvoiceConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.InvoiceApp.Properties.Settings.GlobalReference.Default.InvoiceConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vwInvoiceMasterTableAdapter" GeneratorDataComponentClassName="vwInvoiceMasterTableAdapter" Name="vwInvoiceMaster" UserDataComponentName="vwInvoiceMasterTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="InvoiceConnectionString (Settings)" DbObjectName="Invoice.dbo.vwInvoiceMaster" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT InvoiceMasterId, InvoiceNumber, InvoiceType, InvoiceDate, CompanyName, PersonName, InvoiceRegisterDate, InvoiceRegisterTime, InvoiceDescription, InvoiceTypeId, CompanyId, PersonId FROM dbo.vwInvoiceMaster</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="InvoiceMasterId" DataSetColumn="InvoiceMasterId" />
+              <Mapping SourceColumn="InvoiceNumber" DataSetColumn="InvoiceNumber" />
+              <Mapping SourceColumn="InvoiceType" DataSetColumn="InvoiceType" />
+              <Mapping SourceColumn="InvoiceDate" DataSetColumn="InvoiceDate" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+              <Mapping SourceColumn="PersonName" DataSetColumn="PersonName" />
+              <Mapping SourceColumn="InvoiceRegisterDate" DataSetColumn="InvoiceRegisterDate" />
+              <Mapping SourceColumn="InvoiceRegisterTime" DataSetColumn="InvoiceRegisterTime" />
+              <Mapping SourceColumn="InvoiceDescription" DataSetColumn="InvoiceDescription" />
+              <Mapping SourceColumn="InvoiceTypeId" DataSetColumn="InvoiceTypeId" />
+              <Mapping SourceColumn="CompanyId" DataSetColumn="CompanyId" />
+              <Mapping SourceColumn="PersonId" DataSetColumn="PersonId" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dataSetInvoiceMaster" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dataSetInvoiceMaster" msprop:Generator_UserDSName="dataSetInvoiceMaster">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vwInvoiceMaster" msprop:Generator_TableClassName="vwInvoiceMasterDataTable" msprop:Generator_TableVarName="tablevwInvoiceMaster" msprop:Generator_TablePropName="vwInvoiceMaster" msprop:Generator_RowDeletingName="vwInvoiceMasterRowDeleting" msprop:Generator_RowChangingName="vwInvoiceMasterRowChanging" msprop:Generator_RowEvHandlerName="vwInvoiceMasterRowChangeEventHandler" msprop:Generator_RowDeletedName="vwInvoiceMasterRowDeleted" msprop:Generator_UserTableName="vwInvoiceMaster" msprop:Generator_RowChangedName="vwInvoiceMasterRowChanged" msprop:Generator_RowEvArgName="vwInvoiceMasterRowChangeEvent" msprop:Generator_RowClassName="vwInvoiceMasterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="InvoiceMasterId" msprop:Generator_ColumnVarNameInTable="columnInvoiceMasterId" msprop:Generator_ColumnPropNameInRow="InvoiceMasterId" msprop:Generator_ColumnPropNameInTable="InvoiceMasterIdColumn" msprop:Generator_UserColumnName="InvoiceMasterId" type="xs:long" />
+              <xs:element name="InvoiceNumber" msprop:Generator_ColumnVarNameInTable="columnInvoiceNumber" msprop:Generator_ColumnPropNameInRow="InvoiceNumber" msprop:Generator_ColumnPropNameInTable="InvoiceNumberColumn" msprop:Generator_UserColumnName="InvoiceNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InvoiceType" msprop:Generator_ColumnVarNameInTable="columnInvoiceType" msprop:Generator_ColumnPropNameInRow="InvoiceType" msprop:Generator_ColumnPropNameInTable="InvoiceTypeColumn" msprop:Generator_UserColumnName="InvoiceType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InvoiceDate" msprop:Generator_ColumnVarNameInTable="columnInvoiceDate" msprop:Generator_ColumnPropNameInRow="InvoiceDate" msprop:Generator_ColumnPropNameInTable="InvoiceDateColumn" msprop:Generator_UserColumnName="InvoiceDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PersonName" msprop:Generator_ColumnVarNameInTable="columnPersonName" msprop:Generator_ColumnPropNameInRow="PersonName" msprop:Generator_ColumnPropNameInTable="PersonNameColumn" msprop:Generator_UserColumnName="PersonName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InvoiceRegisterDate" msprop:Generator_ColumnVarNameInTable="columnInvoiceRegisterDate" msprop:Generator_ColumnPropNameInRow="InvoiceRegisterDate" msprop:Generator_ColumnPropNameInTable="InvoiceRegisterDateColumn" msprop:Generator_UserColumnName="InvoiceRegisterDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InvoiceRegisterTime" msprop:Generator_ColumnVarNameInTable="columnInvoiceRegisterTime" msprop:Generator_ColumnPropNameInRow="InvoiceRegisterTime" msprop:Generator_ColumnPropNameInTable="InvoiceRegisterTimeColumn" msprop:Generator_UserColumnName="InvoiceRegisterTime" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InvoiceDescription" msprop:Generator_ColumnVarNameInTable="columnInvoiceDescription" msprop:Generator_ColumnPropNameInRow="InvoiceDescription" msprop:Generator_ColumnPropNameInTable="InvoiceDescriptionColumn" msprop:Generator_UserColumnName="InvoiceDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InvoiceTypeId" msprop:Generator_ColumnVarNameInTable="columnInvoiceTypeId" msprop:Generator_ColumnPropNameInRow="InvoiceTypeId" msprop:Generator_ColumnPropNameInTable="InvoiceTypeIdColumn" msprop:Generator_UserColumnName="InvoiceTypeId" type="xs:long" />
+              <xs:element name="CompanyId" msprop:Generator_ColumnVarNameInTable="columnCompanyId" msprop:Generator_ColumnPropNameInRow="CompanyId" msprop:Generator_ColumnPropNameInTable="CompanyIdColumn" msprop:Generator_UserColumnName="CompanyId" type="xs:long" />
+              <xs:element name="PersonId" msprop:Generator_ColumnVarNameInTable="columnPersonId" msprop:Generator_ColumnPropNameInRow="PersonId" msprop:Generator_ColumnPropNameInTable="PersonIdColumn" msprop:Generator_UserColumnName="PersonId" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vwInvoiceMaster" />
+      <xs:field xpath="mstns:InvoiceMasterId" />
+      <xs:field xpath="mstns:InvoiceTypeId" />
+      <xs:field xpath="mstns:CompanyId" />
+      <xs:field xpath="mstns:PersonId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
