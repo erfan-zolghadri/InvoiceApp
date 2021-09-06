@@ -27,5 +27,10 @@ namespace InvoiceApp.UI
             var formInvoiceByDate = new frmInvoiceMasterByDate();
             formInvoiceByDate.Show();
         }
+
+        private void خروجToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

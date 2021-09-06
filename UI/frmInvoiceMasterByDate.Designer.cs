@@ -29,11 +29,11 @@ namespace InvoiceApp.UI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlInvoiceDate = new System.Windows.Forms.Panel();
             this.cmbFromDay = new System.Windows.Forms.ComboBox();
             this.cmbFromMonth = new System.Windows.Forms.ComboBox();
@@ -47,8 +47,6 @@ namespace InvoiceApp.UI
             this.btnView = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
             this.dgReport = new System.Windows.Forms.DataGridView();
-            this.txtFromDate = new System.Windows.Forms.TextBox();
-            this.txtToDate = new System.Windows.Forms.TextBox();
             this.InvoiceMasterId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.InvoiceNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.InvoiceType = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,6 +59,8 @@ namespace InvoiceApp.UI
             this.InvoiceTypeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CompanyId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PersonId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtFromDate = new System.Windows.Forms.TextBox();
+            this.txtToDate = new System.Windows.Forms.TextBox();
             this.pnlInvoiceDate.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgReport)).BeginInit();
@@ -290,17 +290,17 @@ namespace InvoiceApp.UI
             // 
             this.dgReport.AllowUserToAddRows = false;
             this.dgReport.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Azure;
-            this.dgReport.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Azure;
+            this.dgReport.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgReport.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("IRANSansX DemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgReport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("IRANSansX DemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgReport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgReport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.InvoiceMasterId,
@@ -315,56 +315,32 @@ namespace InvoiceApp.UI
             this.InvoiceTypeId,
             this.CompanyId,
             this.PersonId});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("IRANSansX", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgReport.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("IRANSansX", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgReport.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgReport.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgReport.EnableHeadersVisualStyles = false;
             this.dgReport.Location = new System.Drawing.Point(0, 198);
             this.dgReport.Name = "dgReport";
             this.dgReport.ReadOnly = true;
             this.dgReport.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.DarkCyan;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("IRANSansX DemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgReport.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("IRANSansX", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgReport.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("IRANSansX DemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgReport.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("IRANSansX", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgReport.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgReport.Size = new System.Drawing.Size(967, 283);
             this.dgReport.TabIndex = 33;
-            // 
-            // txtFromDate
-            // 
-            this.txtFromDate.Font = new System.Drawing.Font("IRANSansX", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFromDate.Location = new System.Drawing.Point(298, 15);
-            this.txtFromDate.Name = "txtFromDate";
-            this.txtFromDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtFromDate.Size = new System.Drawing.Size(77, 24);
-            this.txtFromDate.TabIndex = 38;
-            this.txtFromDate.Text = "1400/01/01";
-            this.txtFromDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtFromDate.Visible = false;
-            // 
-            // txtToDate
-            // 
-            this.txtToDate.Font = new System.Drawing.Font("IRANSansX", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtToDate.Location = new System.Drawing.Point(215, 15);
-            this.txtToDate.Name = "txtToDate";
-            this.txtToDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtToDate.Size = new System.Drawing.Size(77, 24);
-            this.txtToDate.TabIndex = 37;
-            this.txtToDate.Text = "1400/01/01";
-            this.txtToDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtToDate.Visible = false;
             // 
             // InvoiceMasterId
             // 
@@ -462,6 +438,30 @@ namespace InvoiceApp.UI
             this.PersonId.ReadOnly = true;
             this.PersonId.Visible = false;
             // 
+            // txtFromDate
+            // 
+            this.txtFromDate.Font = new System.Drawing.Font("IRANSansX", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFromDate.Location = new System.Drawing.Point(298, 15);
+            this.txtFromDate.Name = "txtFromDate";
+            this.txtFromDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtFromDate.Size = new System.Drawing.Size(77, 24);
+            this.txtFromDate.TabIndex = 38;
+            this.txtFromDate.Text = "1400/01/01";
+            this.txtFromDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFromDate.Visible = false;
+            // 
+            // txtToDate
+            // 
+            this.txtToDate.Font = new System.Drawing.Font("IRANSansX", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtToDate.Location = new System.Drawing.Point(215, 15);
+            this.txtToDate.Name = "txtToDate";
+            this.txtToDate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtToDate.Size = new System.Drawing.Size(77, 24);
+            this.txtToDate.TabIndex = 37;
+            this.txtToDate.Text = "1400/01/01";
+            this.txtToDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtToDate.Visible = false;
+            // 
             // frmInvoiceMasterByDate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -477,6 +477,8 @@ namespace InvoiceApp.UI
             this.Controls.Add(this.lblToDate);
             this.Controls.Add(this.pnlInvoiceDate);
             this.Controls.Add(this.lblFromDate);
+            this.MaximumSize = new System.Drawing.Size(983, 520);
+            this.MinimumSize = new System.Drawing.Size(983, 520);
             this.Name = "frmInvoiceMasterByDate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "گزارش فاکتورها به تفکیک تاریخ";

@@ -82,8 +82,8 @@ namespace InvoiceApp.UI
             // گزراشبهتفکیکتاریخفاکتورToolStripMenuItem
             // 
             this.گزراشبهتفکیکتاریخفاکتورToolStripMenuItem.Name = "گزراشبهتفکیکتاریخفاکتورToolStripMenuItem";
-            this.گزراشبهتفکیکتاریخفاکتورToolStripMenuItem.Size = new System.Drawing.Size(231, 24);
-            this.گزراشبهتفکیکتاریخفاکتورToolStripMenuItem.Text = "گزراش به تفکیک تاریخ فاکتور";
+            this.گزراشبهتفکیکتاریخفاکتورToolStripMenuItem.Size = new System.Drawing.Size(230, 24);
+            this.گزراشبهتفکیکتاریخفاکتورToolStripMenuItem.Text = "گزارش به تفکیک تاریخ فاکتور";
             this.گزراشبهتفکیکتاریخفاکتورToolStripMenuItem.Click += new System.EventHandler(this.گزراشبهتفکیکتاریخفاکتورToolStripMenuItem_Click);
             // 
             // خروجToolStripMenuItem
@@ -92,6 +92,7 @@ namespace InvoiceApp.UI
             this.خروجToolStripMenuItem.Name = "خروجToolStripMenuItem";
             this.خروجToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
             this.خروجToolStripMenuItem.Text = "خروج";
+            this.خروجToolStripMenuItem.Click += new System.EventHandler(this.خروجToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -101,6 +102,8 @@ namespace InvoiceApp.UI
             this.ClientSize = new System.Drawing.Size(718, 450);
             this.Controls.Add(this.mnuMain);
             this.MainMenuStrip = this.mnuMain;
+            this.MaximumSize = new System.Drawing.Size(734, 489);
+            this.MinimumSize = new System.Drawing.Size(734, 489);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "صفحه اصلی";
